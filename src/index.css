@@ -1,13 +1,78 @@
+html {
+  height: 100%;
+}
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+h1 {
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 2rem;
+  font-weight: bold;
+}
+.container {
+  background-color: white;
+  padding: 0rem;
+  border-radius: 1rem;
+  margin-top: 2rem;
+  height: 80vh;
+  border: 1px solid rgb(212, 175, 55);
+}
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+form, .mensajes {
+  padding: 2rem;
+  max-width: 600px;
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+.mensajes {
+  text-align: center;
+}
+.resultado {
+  border: 2px solid rgb(212, 175, 55);
+  padding-bottom: 10px;
+}
+form label {
+  text-align: center;
+  font-size: 2rem;
+}
+input[type="submit"]:disabled{
+  opacity: .2;
+  color: black;
+}
+
+.error {
+  background-color: white;
+  border:2px solid red;
+  padding: .5rem;
+  text-align: center;
+  color: red;
+  text-transform: uppercase;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.resultado p {
+  margin: 0;
+}
+
+.titulo {
+  -webkit-text-stroke: 2px black;
+  padding-top: 2rem;
+  margin-top: 0;
+  color: rgb(212, 175, 55);
+}
+
+.button.button-primary, button.button-primary, input[type="submit"].button-primary, input[type="reset"].button-primary, input[type="button"].button-primary {
+  border-color: rgb(212, 175, 55);
+  background-color: black;
+}
+
+.button.button-primary:hover, button.button-primary:hover, input[type="submit"].button-primary:hover, input[type="reset"].button-primary:hover, input[type="button"].button-primary:hover, .button.button-primary:focus, button.button-primary:focus, input[type="submit"].button-primary:focus, input[type="reset"].button-primary:focus, input[type="button"].button-primary:focus {
+  background-color: rgb(212, 175, 55);
+  border-color: black;
 }
